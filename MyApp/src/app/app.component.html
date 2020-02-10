@@ -1,0 +1,20 @@
+
+
+<form #form = "ngForm" (ngSubmit)="handleSubmission(form)">
+  <label>Enter Directory</label><br>
+  <input type="type" name="name"value="" ngModel>
+  <br>
+  <br>
+  <button type="submit" value="Search" id="wrs" ngModel>Search</button>
+</form>
+<br>
+<br>
+<br>
+<table border="1px">
+  <tr *ngFor="let names of file_names">
+    <td>{{names}}</td>
+
+  </tr>
+
+</table>
+
